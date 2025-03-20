@@ -1,0 +1,23 @@
+const uname document.querySelector('#uname');
+
+const pass = document.querySelector('#pass');
+
+const btnContainer = document.querySelector('.btn-container');
+
+const btn = document.querySelector('#login-btn');
+
+const form document.querySelector('form');
+
+const msg = document.querySelector('.msg');
+
+btn.disabled = true;
+
+function shiftButton() {
+
+showMsg();
+
+const positions = ['shift-left', 'shift-top', 'shift-right', 'shift-bottom'];
+
+const currentPosition = positions.find(dir => btn.classList.contains(dir));
+
+// Visit "Smart UI Studio" for Complete source code
